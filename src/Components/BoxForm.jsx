@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 const BoxForm = () =>{
     const [color, setColor] = useState('')
     const [boxObject, setBoxObject] = useState([])
-
     
     const handleColor = (e) =>{
         e.preventDefault();
@@ -16,7 +15,6 @@ const BoxForm = () =>{
         setBoxObject(boxObject => [...boxObject, {"color": color}]);
         setColor('')
     }
-
 
     return (
         <form onSubmit={handleSubmit}>
@@ -35,7 +33,6 @@ const BoxForm = () =>{
     )
 }
 
-
 const Boxes = (props) =>{
     const boxStyle = {
         border: "1px solid black",
@@ -43,6 +40,7 @@ const Boxes = (props) =>{
         width: "100px",
         margin: "10px", 
         display: "inline-block",
+        borderRadius: "5px",
         backgroundColor: ""+ props.bg +"",
     };
     return (
@@ -51,7 +49,5 @@ const Boxes = (props) =>{
         </div>
     )
 }
-
-
 
 export default BoxForm;
