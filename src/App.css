@@ -22,3 +22,11 @@ input{
 span{
   margin: 20px;
 }
+
+.navbar{
+  background-color: hotpink;
+  text-align: left;
+  padding: 10px 100px;
+  color: white;
+  font-size: 25px;
+}

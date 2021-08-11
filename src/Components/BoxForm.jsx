@@ -12,7 +12,7 @@ const BoxForm = () =>{
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        setBoxObject(boxObject => [...boxObject, {"color": color}]);
+        setBoxObject(boxObject => [...boxObject, {color: color}]);
         setColor('')
     }
 
